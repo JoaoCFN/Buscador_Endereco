@@ -1,0 +1,70 @@
+// variáveis
+$bg: #000;
+$white: #fff;
+
+@mixin botao($back, $color, $name){
+    .btn-#{$name}{
+        background-color: $back;
+        color: $color;
+        width: 100%;
+        font-size: 20px;
+        box-shadow: none;
+    }
+
+    .btn-#{$name}:hover{
+        background-color: $color;
+        color: $back;
+        border-color: $back;
+    }
+}
+
+@mixin centraliza_tela(){
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background: $bg;
+}
+
+.buscador{
+     @include centraliza_tela();  
+
+    .card{
+        margin: 0 auto;
+        width: 30rem;
+        max-width: 90%;
+
+        .buscar{
+            width: 90%;
+            margin: 0 auto;
+
+            @include botao($bg, $white, "buscar");
+            
+            h1{
+                color: $bg;
+            }
+
+            label{
+                font-size: 20px;
+            }
+
+            input{
+                border-width: 2px;
+                font-size: 20px;
+                &:focus{
+                    border-color: $bg;
+                    box-shadow: none;    
+                }
+            }
+
+        }
+
+        .endereco{
+            text-align: center;
+            font-size: 20px;
+        }
+    }  
+}
