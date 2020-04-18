@@ -25,7 +25,9 @@
                     <h1><i class="fa fa-map pb-3 pr-2"></i>Buscador</h1>
                     <div class="form-group">
                         <label class="pb-2">Digite o CEP</label>
-                        <input type="text" class="form-control" id="cep" placeholder="CEP">
+                        <!-- o valor do atributo onkeypress faz com que apenas números sejam digitados -->
+                        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" class="form-control" id="cep" placeholder="CEP">
+                        <div class="msg msg_cep"></div>
                     </div>              
                     <button class="btn btn-buscar"><i class="fa fa-search pr-2"></i>Buscar</button> 
                 </div> 

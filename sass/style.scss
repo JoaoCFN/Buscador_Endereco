@@ -2,6 +2,7 @@
 $bg: #4287f5;
 $white: #fff;
 $grey: #647287;
+$error: #dd1717;
 
 
 @mixin botao($back, $color, $name){
@@ -30,6 +31,13 @@ $grey: #647287;
 
 body{
     background: $bg;
+}
+
+.msg{
+    background-color: $error;   
+    color: $white; 
+    transition: 1s;
+    text-align: center;
 }
 
 .buscador{
