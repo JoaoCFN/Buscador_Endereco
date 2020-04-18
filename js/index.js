@@ -5,7 +5,12 @@ const btn_buscar = document.querySelector(".btn-buscar").addEventListener("click
     const bairro = document.querySelector(".bairro");
     const cidade = document.querySelector(".cidade_estado");
     const msg_error = document.querySelector("div.msg_cep");
+    // limpar campos
     msg_error.innerHTML = ``;
+    titulo.innerHTML = ``;
+    logradouro.innerHTML = ``;
+    bairro.innerHTML = ``;
+    cidade.innerHTML = ``;
 
     if(cep.value.length == 8){
         const cep_conv = String(cep.value);
