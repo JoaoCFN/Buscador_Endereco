@@ -1,7 +1,7 @@
 const btn_buscar = document.querySelector(".btn-buscar").addEventListener("click", () => {
     const cep = document.querySelector("input#cep");
     const titulo = document.querySelector(".titulo");
-    const rua = document.querySelector(".rua");
+    const logradouro = document.querySelector(".logradouro");
     const bairro = document.querySelector(".bairro");
     const cidade = document.querySelector(".cidade_estado");
     const msg_error = document.querySelector("div.msg_cep");
@@ -20,7 +20,7 @@ const btn_buscar = document.querySelector(".btn-buscar").addEventListener("click
             }
             else{
                 titulo.innerHTML = `<i class="fa fa-street-view pr-2"></i>Endereço`;
-                rua.innerHTML = `${data.logradouro}`;
+                logradouro.innerHTML = `${data.logradouro}`;
                 bairro.innerHTML = `${data.bairro}`;
                 cidade.innerHTML = `${data.localidade} - ${data.uf}`;
             }
