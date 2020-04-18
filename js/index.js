@@ -12,7 +12,7 @@ btn_buscar.addEventListener("click", () => {
     fetch(`https://viacep.com.br/ws/${cep_conv}/json`)
     .then(response => response.json())
     .then(data => {
-        titulo.innerHTML = `Endereço`;
+        titulo.innerHTML = `<i class="fa fa-street-view pr-2"></i>Endereço`;
         rua.innerHTML = `${data.logradouro}`;
         bairro.innerHTML = `${data.bairro}`;
         cidade.innerHTML = `${data.localidade} - ${data.uf}`;

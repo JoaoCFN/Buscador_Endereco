@@ -20,6 +20,7 @@
   "homepage": "https://github.com/JoaoCFN/Buscador_Endereco#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "font-awesome": "^4.7.0"
   }
 }

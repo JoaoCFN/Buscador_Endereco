@@ -1,6 +1,8 @@
 // variáveis
-$bg: #000;
+$bg: #4287f5;
 $white: #fff;
+$grey: #647287;
+
 
 @mixin botao($back, $color, $name){
     .btn-#{$name}{
@@ -9,6 +11,7 @@ $white: #fff;
         width: 100%;
         font-size: 20px;
         box-shadow: none;
+        font-weight: 800;
     }
 
     .btn-#{$name}:hover{
@@ -45,18 +48,22 @@ body{
             
             h1{
                 color: $bg;
+                font-weight: 800;
             }
 
             label{
                 font-size: 20px;
+                font-weight: 700;
+                color: $grey;
             }
 
             input{
                 border-width: 2px;
                 font-size: 20px;
+                border-color: $grey;
+                color: $grey;
                 &:focus{
-                    border-color: $bg;
-                    box-shadow: none;    
+                    border-color: $bg;   
                 }
             }
 
@@ -65,9 +72,12 @@ body{
         .endereco{
             text-align: center;
             font-size: 20px;
+            color: $grey;
+            font-weight: 600;
 
             h1{
                 font-size: 25px;
+                font-weight: 700;
             }
         }
     }  
