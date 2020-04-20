@@ -4,7 +4,6 @@ $white: #fff;
 $grey: #647287;
 $error: #dd1717;
 
-
 @mixin botao($back, $color, $name){
     .btn-#{$name}{
         background-color: $back;
