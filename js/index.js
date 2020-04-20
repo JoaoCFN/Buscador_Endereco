@@ -1,4 +1,5 @@
-const btn_buscar = document.querySelector(".btn-buscar").addEventListener("click", () => {
+const btn_buscar = document.querySelector(".btn-buscar");
+btn_buscar.addEventListener("click", () => {
     const cep = document.querySelector("input#cep");
     const titulo = document.querySelector(".titulo");
     const logradouro = document.querySelector(".logradouro");
