@@ -1,4 +1,4 @@
-# Buscador de Endereco
+# Buscador de Endereço
 
  ![Print da tela inicial](print_projeto.png?raw=true "Print do começo da homepage")
  
