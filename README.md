@@ -1,9 +1,8 @@
-# Buscador_Endereco
+# Buscador de Endereco
 
  ![Print da tela inicial](print_projeto.png?raw=true "Print do começo da homepage")
  
- Buscador de endereços usando a API do serviço ViaCEP feito para treinar minhas habilidades em HTML, CSS E JS.
+ ## :pencil: Projeto
+ ### Buscador de endereços usando a API do serviço ViaCEP feito para treinar minhas habilidades em HTML, CSS E JS.
  
- Acesse o projeto!
- 
- Link: https://joaocfn.github.io/Buscador_Endereco/
+ ### :link: Acesse o projeto:  https://joaocfn.github.io/Buscador_Endereco/
